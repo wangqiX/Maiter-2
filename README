@@ -1,17 +1,19 @@
-为了将图计算的通信代价降至最低，并支持以边为单位划分的图划分算法。我将Maiter改进为多副本顶点的计算模型，即每个结点在多个分区上都可能存在副本，
-通过消息的同步来降低通信代价。
-
+为了将图计算的通信代价降至最低，并支持以边为单位划分的图划分算法。我将Maiter改进为多副本顶点的计算模型，即每个结点在多个分区上都可能存在副本，通过消息的同步来降低通信代价。举例
+先通过图划分算法将图划分完存到input文件夹里，假如用hdrf算法，则将输入图存到hdrf文件夹下。
 The following is the script to run pagerank
 ---------------------------------------------
 ALGORITHM=Pagerank
-WORKERS=12
-GRAPH=input/pr_graph
-RESULT=result/pr
-NODES=10000
-SNAPSHOT=1
-TERMTHRESH=0.0001
-BUFMSG=10000
+WORKERS=5  #包括workers和master的总数
+GRAPH=input/pagerank/hdrf
+RESULT=result/pagerank/hdrf
+NODES=1000000 #statetable 
+SNAPSHOT=0.1
+TERMTHRESH=0.1
+BUFMSG=100
 PORTION=1
 
 
-./maiter --runner=$ALGORITHM --workers=$WORKERS --graph_dir=$GRAPH --result_dir=$RESULT --num_nodes=$NODES --snapshot_interval=$SNAPSHOT --portion=$PORTION --termcheck_threshold=$TERMTHRESH --bufmsg=$BUFMSG --v=0
+
+./maiter  --runner=$ALGORITHM --workers=$WORKERS --graph_dir=$GRAPH --result_dir=$RESULT --num_nodes=$NODES --snapshot_interval=$SNAPSHOT --portion=$PORTION --termcheck_threshold=$TERMTHRESH --bufmsg=$BUFMSG --v=0 > log
+
+
