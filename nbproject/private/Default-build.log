@@ -1,0 +1,255 @@
+-- The C compiler identification is GNU 4.8.2
+-- The CXX compiler identification is GNU 4.8.2
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++
+-- Check for working CXX compiler: /usr/bin/g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Found PROTOBUF: /usr/lib/x86_64-linux-gnu/libprotobuf.so  
+-- Looking for ucontext.h
+-- Looking for ucontext.h - found
+-- Looking for sys/ucontext.h
+-- Looking for sys/ucontext.h - found
+-- Checking PC fetch from ucontext: uc_mcontext.gregs[REG_EIP]
+-- Performing Test CompilePCFromUContext
+-- Performing Test CompilePCFromUContext - Failed
+-- Checking PC fetch from ucontext: uc_mcontext.gregs[REG_RIP]
+-- Performing Test CompilePCFromUContext
+-- Performing Test CompilePCFromUContext - Success
+-- Found uncontext field: uc_mcontext.gregs[REG_RIP]
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython2.7.so (found version "2.7.6") 
+-- Could NOT find SWIG (missing:  SWIG_EXECUTABLE SWIG_DIR) 
+-- Looking for include file pthread.h
+-- Looking for include file pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Could NOT find SDL (missing:  SDL_LIBRARY SDL_INCLUDE_DIR) 
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+--   thread
+-- Looking for C++ include google/protobuf/descriptor.h
+-- Looking for C++ include google/protobuf/descriptor.h - found
+-- Looking for lzo/lzo1x.h
+-- Looking for lzo/lzo1x.h - found
+-- Looking for /usr/include/libunwind.h
+-- Looking for /usr/include/libunwind.h - not found
+-- Swig not found; skipping python build.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/liyg/Maiter+_/bin/release
+Scanning dependencies of target gflags
+[  3%] Building CXX object external/google-flags/CMakeFiles/gflags.dir/gflags.cc.o
+[  6%] Building CXX object external/google-flags/CMakeFiles/gflags.dir/gflags_reporting.cc.o
+[ 10%] Building CXX object external/google-flags/CMakeFiles/gflags.dir/gflags_nc.cc.o
+Linking CXX static library libgflags.a
+[ 10%] Built target gflags
+Scanning dependencies of target glog
+[ 13%] Building CXX object external/google-logging/CMakeFiles/glog.dir/utilities.cc.o
+[ 16%] Building CXX object external/google-logging/CMakeFiles/glog.dir/vlog_is_on.cc.o
+[ 20%] Building CXX object external/google-logging/CMakeFiles/glog.dir/demangle.cc.o
+[ 23%] Building CXX object external/google-logging/CMakeFiles/glog.dir/logging.cc.o
+[ 26%] Building CXX object external/google-logging/CMakeFiles/glog.dir/symbolize.cc.o
+[ 30%] Building CXX object external/google-logging/CMakeFiles/glog.dir/signalhandler.cc.o
+[ 33%] Building CXX object external/google-logging/CMakeFiles/glog.dir/raw_logging.cc.o
+Linking CXX static library libglog.a
+[ 33%] Built target glog
+Scanning dependencies of target webgraph
+[ 36%] Building CXX object external/webgraph/CMakeFiles/webgraph.dir/webgraph.cc.o
+Linking CXX static library libwebgraph.a
+[ 36%] Built target webgraph
+[ 40%] Running C++ protocol buffer compiler on common.proto
+Scanning dependencies of target common
+[ 43%] Building CXX object util/CMakeFiles/common.dir/common.cc.o
+[ 46%] Building CXX object util/CMakeFiles/common.dir/file.cc.o
+[ 50%] Building CXX object util/CMakeFiles/common.dir/stringpiece.cc.o
+/home/liyg/Maiter+_/src/util/stringpiece.cc: In function ‘std::string dsm::StringPrintf(dsm::StringPiece, ...)’:
+/home/liyg/Maiter+_/src/util/stringpiece.cc:80:38: warning: second parameter of ‘va_start’ not last named argument [-Wvarargs]
+   va_start(l, fmt.AsString().c_str());
+                                      ^
+[ 53%] Building CXX object util/CMakeFiles/common.dir/rpc.cc.o
+[ 56%] Building CXX object util/CMakeFiles/common.dir/static-initializers.cc.o
+[ 60%] Building CXX object util/CMakeFiles/common.dir/common.pb.cc.o
+Linking CXX static library libcommon.a
+[ 60%] Built target common
+Scanning dependencies of target common_proto
+[ 63%] Built target common_proto
+[ 66%] Running C++ protocol buffer compiler on worker.proto
+Scanning dependencies of target worker
+[ 70%] Building CXX object worker/CMakeFiles/worker.dir/worker.cc.o
+In file included from /home/liyg/Maiter+_/src/util/common.h:13:0,
+                 from /home/liyg/Maiter+_/src/worker/worker.cc:4:
+/home/liyg/Maiter+_/src/kernel/global-table.h: In member function ‘void dsm::TypedGlobalTable<K, V1, V2, V3>::ApplyUpdates(const dsm::KVPairData&)’:
+/home/liyg/Maiter+_/src/external/google-logging/glog/logging.h:852:30: warning: typedef ‘INVALID_REQUESTED_LOG_SEVERITY’ locally defined but not used [-Wunused-local-typedefs]
+                              INVALID_REQUESTED_LOG_SEVERITY);           \
+                              ^
+/home/liyg/Maiter+_/src/external/google-logging/glog/logging.h:847:73: note: in definition of macro ‘GOOGLE_GLOG_COMPILE_ASSERT’
+   typedef google::glog_internal_namespace_::CompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+                                                                         ^
+/home/liyg/Maiter+_/src/kernel/global-table.h:276:7: note: in expansion of macro ‘LOG_EVERY_N’
+       LOG_EVERY_N(INFO, 1000)
+       ^
+In file included from /home/liyg/Maiter+_/src/worker/worker.h:6:0,
+                 from /home/liyg/Maiter+_/src/worker/worker.cc:5:
+/home/liyg/Maiter+_/src/kernel/kernel.h: At global scope:
+/home/liyg/Maiter+_/src/kernel/kernel.h:418:26: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+         double starttime=0;
+                          ^
+[ 73%] Building CXX object worker/CMakeFiles/worker.dir/worker.pb.cc.o
+Linking CXX static library libworker.a
+[ 73%] Built target worker
+Scanning dependencies of target worker_proto
+[ 76%] Built target worker_proto
+Scanning dependencies of target kernel
+[ 80%] Building CXX object kernel/CMakeFiles/kernel.dir/kernel.cc.o
+In file included from /home/liyg/Maiter+_/src/util/common.h:13:0,
+                 from /home/liyg/Maiter+_/src/kernel/table.h:6,
+                 from /home/liyg/Maiter+_/src/kernel/kernel.h:4,
+                 from /home/liyg/Maiter+_/src/kernel/kernel.cc:3:
+/home/liyg/Maiter+_/src/kernel/global-table.h: In member function ‘void dsm::TypedGlobalTable<K, V1, V2, V3>::ApplyUpdates(const dsm::KVPairData&)’:
+/home/liyg/Maiter+_/src/external/google-logging/glog/logging.h:852:30: warning: typedef ‘INVALID_REQUESTED_LOG_SEVERITY’ locally defined but not used [-Wunused-local-typedefs]
+                              INVALID_REQUESTED_LOG_SEVERITY);           \
+                              ^
+/home/liyg/Maiter+_/src/external/google-logging/glog/logging.h:847:73: note: in definition of macro ‘GOOGLE_GLOG_COMPILE_ASSERT’
+   typedef google::glog_internal_namespace_::CompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+                                                                         ^
+/home/liyg/Maiter+_/src/kernel/global-table.h:276:7: note: in expansion of macro ‘LOG_EVERY_N’
+       LOG_EVERY_N(INFO, 1000)
+       ^
+In file included from /home/liyg/Maiter+_/src/kernel/kernel.cc:3:0:
+/home/liyg/Maiter+_/src/kernel/kernel.h: At global scope:
+/home/liyg/Maiter+_/src/kernel/kernel.h:418:26: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+         double starttime=0;
+                          ^
+[ 83%] Building CXX object kernel/CMakeFiles/kernel.dir/table-registry.cc.o
+In file included from /home/liyg/Maiter+_/src/util/common.h:13:0,
+                 from /home/liyg/Maiter+_/src/kernel/table-registry.h:4,
+                 from /home/liyg/Maiter+_/src/kernel/table-registry.cc:3:
+/home/liyg/Maiter+_/src/kernel/global-table.h: In member function ‘void dsm::TypedGlobalTable<K, V1, V2, V3>::ApplyUpdates(const dsm::KVPairData&)’:
+/home/liyg/Maiter+_/src/external/google-logging/glog/logging.h:852:30: warning: typedef ‘INVALID_REQUESTED_LOG_SEVERITY’ locally defined but not used [-Wunused-local-typedefs]
+                              INVALID_REQUESTED_LOG_SEVERITY);           \
+                              ^
+/home/liyg/Maiter+_/src/external/google-logging/glog/logging.h:847:73: note: in definition of macro ‘GOOGLE_GLOG_COMPILE_ASSERT’
+   typedef google::glog_internal_namespace_::CompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+                                                                         ^
+/home/liyg/Maiter+_/src/kernel/global-table.h:276:7: note: in expansion of macro ‘LOG_EVERY_N’
+       LOG_EVERY_N(INFO, 1000)
+       ^
+[ 86%] Building CXX object kernel/CMakeFiles/kernel.dir/local-table.cc.o
+[ 90%] Building CXX object kernel/CMakeFiles/kernel.dir/global-table.cc.o
+In file included from /home/liyg/Maiter+_/src/util/common.h:13:0,
+                 from /home/liyg/Maiter+_/src/kernel/table.h:6,
+                 from /home/liyg/Maiter+_/src/kernel/global-table.h:4,
+                 from /home/liyg/Maiter+_/src/kernel/global-table.cc:1:
+/home/liyg/Maiter+_/src/kernel/global-table.h: In member function ‘void dsm::TypedGlobalTable<K, V1, V2, V3>::ApplyUpdates(const dsm::KVPairData&)’:
+/home/liyg/Maiter+_/src/external/google-logging/glog/logging.h:852:30: warning: typedef ‘INVALID_REQUESTED_LOG_SEVERITY’ locally defined but not used [-Wunused-local-typedefs]
+                              INVALID_REQUESTED_LOG_SEVERITY);           \
+                              ^
+/home/liyg/Maiter+_/src/external/google-logging/glog/logging.h:847:73: note: in definition of macro ‘GOOGLE_GLOG_COMPILE_ASSERT’
+   typedef google::glog_internal_namespace_::CompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+                                                                         ^
+/home/liyg/Maiter+_/src/kernel/global-table.h:276:7: note: in expansion of macro ‘LOG_EVERY_N’
+       LOG_EVERY_N(INFO, 1000)
+       ^
+/home/liyg/Maiter+_/src/kernel/global-table.cc: In member function ‘virtual void dsm::MutableGlobalTableBase::write_delta(const dsm::KVPairData&)’:
+/home/liyg/Maiter+_/src/external/google-logging/glog/logging.h:852:30: warning: typedef ‘INVALID_REQUESTED_LOG_SEVERITY’ locally defined but not used [-Wunused-local-typedefs]
+                              INVALID_REQUESTED_LOG_SEVERITY);           \
+                              ^
+/home/liyg/Maiter+_/src/external/google-logging/glog/logging.h:847:73: note: in definition of macro ‘GOOGLE_GLOG_COMPILE_ASSERT’
+   typedef google::glog_internal_namespace_::CompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+                                                                         ^
+/home/liyg/Maiter+_/src/kernel/global-table.cc:104:5: note: in expansion of macro ‘LOG_EVERY_N’
+     LOG_EVERY_N(INFO, 1000) << "Ignoring delta write for forwarded data";
+     ^
+Linking CXX static library libkernel.a
+[ 90%] Built target kernel
+Scanning dependencies of target master
+[ 93%] Building CXX object master/CMakeFiles/master.dir/master.cc.o
+In file included from /home/liyg/Maiter+_/src/util/common.h:13:0,
+                 from /home/liyg/Maiter+_/src/master/master.h:4,
+                 from /home/liyg/Maiter+_/src/master/master.cc:1:
+/home/liyg/Maiter+_/src/kernel/global-table.h: In member function ‘void dsm::TypedGlobalTable<K, V1, V2, V3>::ApplyUpdates(const dsm::KVPairData&)’:
+/home/liyg/Maiter+_/src/external/google-logging/glog/logging.h:852:30: warning: typedef ‘INVALID_REQUESTED_LOG_SEVERITY’ locally defined but not used [-Wunused-local-typedefs]
+                              INVALID_REQUESTED_LOG_SEVERITY);           \
+                              ^
+/home/liyg/Maiter+_/src/external/google-logging/glog/logging.h:847:73: note: in definition of macro ‘GOOGLE_GLOG_COMPILE_ASSERT’
+   typedef google::glog_internal_namespace_::CompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+                                                                         ^
+/home/liyg/Maiter+_/src/kernel/global-table.h:276:7: note: in expansion of macro ‘LOG_EVERY_N’
+       LOG_EVERY_N(INFO, 1000)
+       ^
+In file included from /home/liyg/Maiter+_/src/master/master.h:7:0,
+                 from /home/liyg/Maiter+_/src/master/master.cc:1:
+/home/liyg/Maiter+_/src/kernel/kernel.h: At global scope:
+/home/liyg/Maiter+_/src/kernel/kernel.h:418:26: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+         double starttime=0;
+                          ^
+Linking CXX static library libmaster.a
+[ 93%] Built target master
+Scanning dependencies of target example
+[ 96%] Building CXX object examples/CMakeFiles/example.dir/pagerank.cc.o
+In file included from /home/liyg/Maiter+_/src/util/common.h:13:0,
+                 from /home/liyg/Maiter+_/src/client/client.h:4,
+                 from /home/liyg/Maiter+_/src/examples/pagerank.cc:1:
+/home/liyg/Maiter+_/src/kernel/global-table.h: In member function ‘void dsm::TypedGlobalTable<K, V1, V2, V3>::ApplyUpdates(const dsm::KVPairData&)’:
+/home/liyg/Maiter+_/src/external/google-logging/glog/logging.h:852:30: warning: typedef ‘INVALID_REQUESTED_LOG_SEVERITY’ locally defined but not used [-Wunused-local-typedefs]
+                              INVALID_REQUESTED_LOG_SEVERITY);           \
+                              ^
+/home/liyg/Maiter+_/src/external/google-logging/glog/logging.h:847:73: note: in definition of macro ‘GOOGLE_GLOG_COMPILE_ASSERT’
+   typedef google::glog_internal_namespace_::CompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+                                                                         ^
+/home/liyg/Maiter+_/src/kernel/global-table.h:276:7: note: in expansion of macro ‘LOG_EVERY_N’
+       LOG_EVERY_N(INFO, 1000)
+       ^
+In file included from /home/liyg/Maiter+_/src/worker/worker.h:6:0,
+                 from /home/liyg/Maiter+_/src/client/client.h:7,
+                 from /home/liyg/Maiter+_/src/examples/pagerank.cc:1:
+/home/liyg/Maiter+_/src/kernel/kernel.h: At global scope:
+/home/liyg/Maiter+_/src/kernel/kernel.h:418:26: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+         double starttime=0;
+                          ^
+In file included from /home/liyg/Maiter+_/src/worker/worker.h:6:0,
+                 from /home/liyg/Maiter+_/src/client/client.h:7,
+                 from /home/liyg/Maiter+_/src/examples/pagerank.cc:1:
+/home/liyg/Maiter+_/src/kernel/kernel.h: In instantiation of ‘void dsm::MaiterKernel1<K, V, D>::read_file(dsm::TypedGlobalTable<K, V, V, D>*) [with K = int; V = float; D = std::vector<int>]’:
+/home/liyg/Maiter+_/src/kernel/kernel.h:366:19:   required from ‘void dsm::MaiterKernel1<K, V, D>::init_table(dsm::TypedGlobalTable<K, V, V, D>*) [with K = int; V = float; D = std::vector<int>]’
+/home/liyg/Maiter+_/src/kernel/kernel.h:372:33:   required from ‘void dsm::MaiterKernel1<K, V, D>::run() [with K = int; V = float; D = std::vector<int>]’
+/home/liyg/Maiter+_/src/kernel/kernel.h:661:91:   required from ‘int dsm::MaiterKernel<K, V, D>::registerMaiter() [with K = int; V = float; D = std::vector<int>]’
+/home/liyg/Maiter+_/src/examples/pagerank.cc:122:28:   required from here
+/home/liyg/Maiter+_/src/kernel/kernel.h:303:13: warning: unused variable ‘shard’ [-Wunused-variable]
+         int shard=current_shard();
+             ^
+Linking CXX static library libexample.a
+[ 96%] Built target example
+Scanning dependencies of target maiter
+[100%] Building CXX object examples/CMakeFiles/maiter.dir/main.cc.o
+In file included from /home/liyg/Maiter+_/src/util/common.h:13:0,
+                 from /home/liyg/Maiter+_/src/client/client.h:4,
+                 from /home/liyg/Maiter+_/src/examples/main.cc:1:
+/home/liyg/Maiter+_/src/kernel/global-table.h: In member function ‘void dsm::TypedGlobalTable<K, V1, V2, V3>::ApplyUpdates(const dsm::KVPairData&)’:
+/home/liyg/Maiter+_/src/external/google-logging/glog/logging.h:852:30: warning: typedef ‘INVALID_REQUESTED_LOG_SEVERITY’ locally defined but not used [-Wunused-local-typedefs]
+                              INVALID_REQUESTED_LOG_SEVERITY);           \
+                              ^
+/home/liyg/Maiter+_/src/external/google-logging/glog/logging.h:847:73: note: in definition of macro ‘GOOGLE_GLOG_COMPILE_ASSERT’
+   typedef google::glog_internal_namespace_::CompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+                                                                         ^
+/home/liyg/Maiter+_/src/kernel/global-table.h:276:7: note: in expansion of macro ‘LOG_EVERY_N’
+       LOG_EVERY_N(INFO, 1000)
+       ^
+In file included from /home/liyg/Maiter+_/src/worker/worker.h:6:0,
+                 from /home/liyg/Maiter+_/src/client/client.h:7,
+                 from /home/liyg/Maiter+_/src/examples/main.cc:1:
+/home/liyg/Maiter+_/src/kernel/kernel.h: At global scope:
+/home/liyg/Maiter+_/src/kernel/kernel.h:418:26: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+         double starttime=0;
+                          ^
+Linking CXX executable maiter
+[100%] Built target maiter

@@ -1,0 +1,1337 @@
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2730097648/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2730097648.dir/build.make CMakeFiles/cmTryCompileExec2730097648.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2730097648.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2730097648.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec2730097648.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2730097648/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4085486086/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4085486086.dir/build.make CMakeFiles/cmTryCompileExec4085486086.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4085486086.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4085486086.dir/CheckSymbolExists.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec4085486086
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4085486086.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec4085486086.dir/CheckSymbolExists.c.o  -o cmTryCompileExec4085486086 -rdynamic 
+CMakeFiles/cmTryCompileExec4085486086.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[2]: *** [cmTryCompileExec4085486086] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec4085486086/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+File /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3689743863/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3689743863.dir/build.make CMakeFiles/cmTryCompileExec3689743863.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3689743863.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3689743863.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3689743863
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3689743863.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3689743863.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3689743863 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[2]: *** [cmTryCompileExec3689743863] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3689743863/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file /usr/include/libunwind.h exists failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3787958311/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3787958311.dir/build.make CMakeFiles/cmTryCompileExec3787958311.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3787958311.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3787958311.dir/CheckIncludeFile.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:36: fatal error: /usr/include/libunwind.h: No such file or directory
+ #include </usr/include/libunwind.h>
+                                    ^
+compilation terminated.
+make[2]: *** [CMakeFiles/cmTryCompileExec3787958311.dir/CheckIncludeFile.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3787958311/fast] Error 2
+
+
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1269027604/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1269027604.dir/build.make CMakeFiles/cmTryCompileExec1269027604.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1269027604.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1269027604.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[2]: *** [CMakeFiles/cmTryCompileExec1269027604.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1269027604/fast] Error 2
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3353599803/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3353599803.dir/build.make CMakeFiles/cmTryCompileExec3353599803.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3353599803.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec3353599803.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[2]: *** [CMakeFiles/cmTryCompileExec3353599803.dir/src.c.o] Error 1
+make[1]: *** [cmTryCompileExec3353599803/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2112005930/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2112005930.dir/build.make CMakeFiles/cmTryCompileExec2112005930.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2112005930.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2112005930.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec2112005930.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2112005930/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3766756413/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3766756413.dir/build.make CMakeFiles/cmTryCompileExec3766756413.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3766756413.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec3766756413.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec3766756413.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3766756413/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3940938935/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3940938935.dir/build.make CMakeFiles/cmTryCompileExec3940938935.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3940938935.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec3940938935.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec3940938935.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3940938935/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2328340798/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2328340798.dir/build.make CMakeFiles/cmTryCompileExec2328340798.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2328340798.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2328340798.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec2328340798.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2328340798/fast] Error 2
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4247687580/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4247687580.dir/build.make CMakeFiles/cmTryCompileExec4247687580.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4247687580.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec4247687580.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec4247687580.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec4247687580/fast] Error 2
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3591820839/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3591820839.dir/build.make CMakeFiles/cmTryCompileExec3591820839.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3591820839.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec3591820839.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec3591820839.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3591820839/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec346733149/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec346733149.dir/build.make CMakeFiles/cmTryCompileExec346733149.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec346733149.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec346733149.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[2]: *** [CMakeFiles/cmTryCompileExec346733149.dir/src.c.o] Error 1
+make[1]: *** [cmTryCompileExec346733149/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec846548835/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec846548835.dir/build.make CMakeFiles/cmTryCompileExec846548835.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec846548835.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec846548835.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[2]: *** [CMakeFiles/cmTryCompileExec846548835.dir/src.c.o] Error 1
+make[1]: *** [cmTryCompileExec846548835/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1830827453/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1830827453.dir/build.make CMakeFiles/cmTryCompileExec1830827453.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1830827453.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1830827453.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[2]: *** [CMakeFiles/cmTryCompileExec1830827453.dir/src.c.o] Error 1
+make[1]: *** [cmTryCompileExec1830827453/fast] Error 2
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1910493360/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1910493360.dir/build.make CMakeFiles/cmTryCompileExec1910493360.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1910493360.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1910493360.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec1910493360.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1910493360/fast] Error 2
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1663474783/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1663474783.dir/build.make CMakeFiles/cmTryCompileExec1663474783.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1663474783.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1663474783.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec1663474783.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1663474783/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec328904680/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec328904680.dir/build.make CMakeFiles/cmTryCompileExec328904680.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec328904680.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec328904680.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec328904680.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec328904680/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2115185804/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2115185804.dir/build.make CMakeFiles/cmTryCompileExec2115185804.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2115185804.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2115185804.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[2]: *** [CMakeFiles/cmTryCompileExec2115185804.dir/src.c.o] Error 1
+make[1]: *** [cmTryCompileExec2115185804/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4032940545/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4032940545.dir/build.make CMakeFiles/cmTryCompileExec4032940545.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4032940545.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec4032940545.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec4032940545.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec4032940545/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4196923092/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4196923092.dir/build.make CMakeFiles/cmTryCompileExec4196923092.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4196923092.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec4196923092.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[2]: *** [CMakeFiles/cmTryCompileExec4196923092.dir/src.c.o] Error 1
+make[1]: *** [cmTryCompileExec4196923092/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2689052041/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2689052041.dir/build.make CMakeFiles/cmTryCompileExec2689052041.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2689052041.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2689052041.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec2689052041.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2689052041/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2680890628/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2680890628.dir/build.make CMakeFiles/cmTryCompileExec2680890628.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2680890628.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2680890628.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec2680890628.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2680890628/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec143639023/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec143639023.dir/build.make CMakeFiles/cmTryCompileExec143639023.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec143639023.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec143639023.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[2]: *** [CMakeFiles/cmTryCompileExec143639023.dir/src.c.o] Error 1
+make[1]: *** [cmTryCompileExec143639023/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec226099903/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec226099903.dir/build.make CMakeFiles/cmTryCompileExec226099903.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec226099903.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec226099903.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[2]: *** [CMakeFiles/cmTryCompileExec226099903.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec226099903/fast] Error 2
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1936872340/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1936872340.dir/build.make CMakeFiles/cmTryCompileExec1936872340.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1936872340.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1936872340.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[2]: *** [CMakeFiles/cmTryCompileExec1936872340.dir/src.c.o] Error 1
+make[1]: *** [cmTryCompileExec1936872340/fast] Error 2
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3784046897/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3784046897.dir/build.make CMakeFiles/cmTryCompileExec3784046897.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3784046897.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec3784046897.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[2]: *** [CMakeFiles/cmTryCompileExec3784046897.dir/src.c.o] Error 1
+make[1]: *** [cmTryCompileExec3784046897/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2462047428/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2462047428.dir/build.make CMakeFiles/cmTryCompileExec2462047428.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2462047428.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2462047428.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec2462047428.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2462047428/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1141113330/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1141113330.dir/build.make CMakeFiles/cmTryCompileExec1141113330.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1141113330.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1141113330.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec1141113330.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1141113330/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2562737440/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2562737440.dir/build.make CMakeFiles/cmTryCompileExec2562737440.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2562737440.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2562737440.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[2]: *** [CMakeFiles/cmTryCompileExec2562737440.dir/src.c.o] Error 1
+make[1]: *** [cmTryCompileExec2562737440/fast] Error 2
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2003180327/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2003180327.dir/build.make CMakeFiles/cmTryCompileExec2003180327.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2003180327.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2003180327.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[2]: *** [CMakeFiles/cmTryCompileExec2003180327.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2003180327/fast] Error 2
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3140288559/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3140288559.dir/build.make CMakeFiles/cmTryCompileExec3140288559.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3140288559.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec3140288559.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec3140288559.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3140288559/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec826139146/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec826139146.dir/build.make CMakeFiles/cmTryCompileExec826139146.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec826139146.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec826139146.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec826139146.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec826139146/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2740795372/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2740795372.dir/build.make CMakeFiles/cmTryCompileExec2740795372.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2740795372.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2740795372.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec2740795372.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2740795372/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3686194355/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3686194355.dir/build.make CMakeFiles/cmTryCompileExec3686194355.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3686194355.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec3686194355.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec3686194355.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3686194355/fast] Error 2
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4042446794/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4042446794.dir/build.make CMakeFiles/cmTryCompileExec4042446794.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4042446794.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec4042446794.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec4042446794.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec4042446794/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1733802127/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1733802127.dir/build.make CMakeFiles/cmTryCompileExec1733802127.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1733802127.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1733802127.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec1733802127.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1733802127/fast] Error 2
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec262533918/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec262533918.dir/build.make CMakeFiles/cmTryCompileExec262533918.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec262533918.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec262533918.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec262533918.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec262533918/fast] Error 2
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1741090883/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1741090883.dir/build.make CMakeFiles/cmTryCompileExec1741090883.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1741090883.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1741090883.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec1741090883.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1741090883/fast] Error 2
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1099538536/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1099538536.dir/build.make CMakeFiles/cmTryCompileExec1099538536.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1099538536.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1099538536.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec1099538536.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1099538536/fast] Error 2
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3493841451/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3493841451.dir/build.make CMakeFiles/cmTryCompileExec3493841451.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3493841451.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec3493841451.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec3493841451.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3493841451/fast] Error 2
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3409361419/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3409361419.dir/build.make CMakeFiles/cmTryCompileExec3409361419.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3409361419.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec3409361419.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[2]: *** [CMakeFiles/cmTryCompileExec3409361419.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3409361419/fast] Error 2
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1815261947/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1815261947.dir/build.make CMakeFiles/cmTryCompileExec1815261947.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1815261947.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1815261947.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec1815261947.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1815261947/fast] Error 2
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1074807430/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1074807430.dir/build.make CMakeFiles/cmTryCompileExec1074807430.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1074807430.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1074807430.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/cmTryCompileExec1074807430.dir/src.c.o] Error 1
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1074807430/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext failed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec772670253/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec772670253.dir/build.make CMakeFiles/cmTryCompileExec772670253.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec772670253.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec772670253.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: error: 'REG_EIP' undeclared (first use in this function)
+     return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+                                  ^
+/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c:8:34: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[2]: *** [CMakeFiles/cmTryCompileExec772670253.dir/src.c.o] Error 1
+make[1]: *** [cmTryCompileExec772670253/fast] Error 2
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_EIP] == 0;
+  }

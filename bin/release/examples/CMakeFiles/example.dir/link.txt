@@ -1,0 +1,2 @@
+/usr/bin/ar cr libexample.a  CMakeFiles/example.dir/pagerank.cc.o
+/usr/bin/ranlib libexample.a

@@ -1,0 +1,6 @@
+# Hashes of file build rules.
+29b82142b27149a237f7f1b5c359d532 examples/CMakeFiles/example_proto
+693e4c04f859e7da30919c47e1648bb9 util/CMakeFiles/common_proto
+d2cf3212208eae916a453db35a3b3423 util/common.pb.cc
+82c5c9b25289abdab86ee6e9f6e02116 worker/CMakeFiles/worker_proto
+be885157076c9856c888a7c9583fbe7e worker/worker.pb.cc

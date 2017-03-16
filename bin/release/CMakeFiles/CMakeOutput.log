@@ -1,0 +1,1467 @@
+The system is: Linux - 3.13.0-32-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/liyg/Maiter+_/bin/release/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/liyg/Maiter+_/bin/release/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec697669951/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec697669951.dir/build.make CMakeFiles/cmTryCompileExec697669951.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec697669951.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec697669951.dir/testCCompiler.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec697669951
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec697669951.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec697669951.dir/testCCompiler.c.o  -o cmTryCompileExec697669951 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2226763083/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2226763083.dir/build.make CMakeFiles/cmTryCompileExec2226763083.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2226763083.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2226763083.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec2226763083
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2226763083.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTryCompileExec2226763083.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2226763083 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2226763083' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2226763083 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2226763083.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec2226763083/fast"]
+  ignore line: [make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2226763083.dir/build.make CMakeFiles/cmTryCompileExec2226763083.dir/build]
+  ignore line: [make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec2226763083.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2226763083.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec2226763083]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2226763083.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec2226763083.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2226763083 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2226763083' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2226763083 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2226763083.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2226763083] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
+    arg [CMakeFiles/cmTryCompileExec2226763083.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1870014579/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1870014579.dir/build.make CMakeFiles/cmTryCompileExec1870014579.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1870014579.dir/testCXXCompiler.cxx.o
+/usr/bin/g++     -o CMakeFiles/cmTryCompileExec1870014579.dir/testCXXCompiler.cxx.o -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec1870014579
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1870014579.dir/link.txt --verbose=1
+/usr/bin/g++        CMakeFiles/cmTryCompileExec1870014579.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1870014579 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1084259311/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1084259311.dir/build.make CMakeFiles/cmTryCompileExec1084259311.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1084259311.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/g++     -o CMakeFiles/cmTryCompileExec1084259311.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec1084259311
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1084259311.dir/link.txt --verbose=1
+/usr/bin/g++      -v CMakeFiles/cmTryCompileExec1084259311.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1084259311 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/g++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1084259311' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1084259311 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec1084259311.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec1084259311/fast"]
+  ignore line: [make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1084259311.dir/build.make CMakeFiles/cmTryCompileExec1084259311.dir/build]
+  ignore line: [make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec1084259311.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/g++     -o CMakeFiles/cmTryCompileExec1084259311.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec1084259311]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1084259311.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/g++      -v CMakeFiles/cmTryCompileExec1084259311.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1084259311 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1084259311' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1084259311 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec1084259311.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec1084259311] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
+    arg [CMakeFiles/cmTryCompileExec1084259311.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the include file ucontext.h exists passed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2163722431/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2163722431.dir/build.make CMakeFiles/cmTryCompileExec2163722431.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2163722431.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2163722431.dir/CheckIncludeFile.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2163722431
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2163722431.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2163722431.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2163722431 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/ucontext.h exists passed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3986800507/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3986800507.dir/build.make CMakeFiles/cmTryCompileExec3986800507.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3986800507.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3986800507.dir/CheckIncludeFile.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3986800507
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3986800507.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3986800507.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3986800507 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2580900878/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2580900878.dir/build.make CMakeFiles/cmTryCompileExec2580900878.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2580900878.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2580900878.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2580900878
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2580900878.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec2580900878.dir/src.c.o  -o cmTryCompileExec2580900878 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1258895016/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1258895016.dir/build.make CMakeFiles/cmTryCompileExec1258895016.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1258895016.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1258895016.dir/CheckIncludeFiles.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1258895016
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1258895016.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1258895016.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1258895016 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3065675527/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3065675527.dir/build.make CMakeFiles/cmTryCompileExec3065675527.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3065675527.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3065675527.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3065675527
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3065675527.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3065675527.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3065675527 -rdynamic -lpthread 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file google/protobuf/descriptor.h exists passed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec57747205/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec57747205.dir/build.make CMakeFiles/cmTryCompileExec57747205.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec57747205.dir/CheckIncludeFile.cxx.o
+/usr/bin/g++     -o CMakeFiles/cmTryCompileExec57747205.dir/CheckIncludeFile.cxx.o -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTryCompileExec57747205
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec57747205.dir/link.txt --verbose=1
+/usr/bin/g++        CMakeFiles/cmTryCompileExec57747205.dir/CheckIncludeFile.cxx.o  -o cmTryCompileExec57747205 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file lzo/lzo1x.h exists passed with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec236968746/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec236968746.dir/build.make CMakeFiles/cmTryCompileExec236968746.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec236968746.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec236968746.dir/CheckIncludeFile.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec236968746
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec236968746.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec236968746.dir/CheckIncludeFile.c.o  -o cmTryCompileExec236968746 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec876294028/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec876294028.dir/build.make CMakeFiles/cmTryCompileExec876294028.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec876294028.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec876294028.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec876294028
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec876294028.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec876294028.dir/src.c.o  -o cmTryCompileExec876294028 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4103013690/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4103013690.dir/build.make CMakeFiles/cmTryCompileExec4103013690.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4103013690.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec4103013690.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec4103013690
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4103013690.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec4103013690.dir/src.c.o  -o cmTryCompileExec4103013690 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1660881292/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1660881292.dir/build.make CMakeFiles/cmTryCompileExec1660881292.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1660881292.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1660881292.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1660881292
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1660881292.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec1660881292.dir/src.c.o  -o cmTryCompileExec1660881292 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2150947921/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2150947921.dir/build.make CMakeFiles/cmTryCompileExec2150947921.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2150947921.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2150947921.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2150947921
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2150947921.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec2150947921.dir/src.c.o  -o cmTryCompileExec2150947921 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4165193656/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4165193656.dir/build.make CMakeFiles/cmTryCompileExec4165193656.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4165193656.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec4165193656.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec4165193656
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4165193656.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec4165193656.dir/src.c.o  -o cmTryCompileExec4165193656 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec455186192/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec455186192.dir/build.make CMakeFiles/cmTryCompileExec455186192.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec455186192.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec455186192.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec455186192
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec455186192.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec455186192.dir/src.c.o  -o cmTryCompileExec455186192 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec993877880/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec993877880.dir/build.make CMakeFiles/cmTryCompileExec993877880.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec993877880.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec993877880.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec993877880
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec993877880.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec993877880.dir/src.c.o  -o cmTryCompileExec993877880 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1032663087/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1032663087.dir/build.make CMakeFiles/cmTryCompileExec1032663087.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1032663087.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1032663087.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1032663087
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1032663087.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec1032663087.dir/src.c.o  -o cmTryCompileExec1032663087 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3633931516/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3633931516.dir/build.make CMakeFiles/cmTryCompileExec3633931516.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3633931516.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec3633931516.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3633931516
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3633931516.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec3633931516.dir/src.c.o  -o cmTryCompileExec3633931516 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3246256496/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3246256496.dir/build.make CMakeFiles/cmTryCompileExec3246256496.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3246256496.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec3246256496.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3246256496
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3246256496.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec3246256496.dir/src.c.o  -o cmTryCompileExec3246256496 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2353314023/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2353314023.dir/build.make CMakeFiles/cmTryCompileExec2353314023.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2353314023.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2353314023.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2353314023
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2353314023.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec2353314023.dir/src.c.o  -o cmTryCompileExec2353314023 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1583899805/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1583899805.dir/build.make CMakeFiles/cmTryCompileExec1583899805.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1583899805.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1583899805.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1583899805
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1583899805.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec1583899805.dir/src.c.o  -o cmTryCompileExec1583899805 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec902938491/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec902938491.dir/build.make CMakeFiles/cmTryCompileExec902938491.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec902938491.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec902938491.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec902938491
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec902938491.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec902938491.dir/src.c.o  -o cmTryCompileExec902938491 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec62905915/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec62905915.dir/build.make CMakeFiles/cmTryCompileExec62905915.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec62905915.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec62905915.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec62905915
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec62905915.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec62905915.dir/src.c.o  -o cmTryCompileExec62905915 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec468774036/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec468774036.dir/build.make CMakeFiles/cmTryCompileExec468774036.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec468774036.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec468774036.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec468774036
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec468774036.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec468774036.dir/src.c.o  -o cmTryCompileExec468774036 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec554749633/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec554749633.dir/build.make CMakeFiles/cmTryCompileExec554749633.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec554749633.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec554749633.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec554749633
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec554749633.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec554749633.dir/src.c.o  -o cmTryCompileExec554749633 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1554313977/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1554313977.dir/build.make CMakeFiles/cmTryCompileExec1554313977.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1554313977.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1554313977.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1554313977
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1554313977.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec1554313977.dir/src.c.o  -o cmTryCompileExec1554313977 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3753493906/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3753493906.dir/build.make CMakeFiles/cmTryCompileExec3753493906.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3753493906.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec3753493906.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3753493906
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3753493906.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec3753493906.dir/src.c.o  -o cmTryCompileExec3753493906 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2325098087/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2325098087.dir/build.make CMakeFiles/cmTryCompileExec2325098087.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2325098087.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2325098087.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2325098087
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2325098087.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec2325098087.dir/src.c.o  -o cmTryCompileExec2325098087 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec720513810/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec720513810.dir/build.make CMakeFiles/cmTryCompileExec720513810.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec720513810.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec720513810.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec720513810
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec720513810.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec720513810.dir/src.c.o  -o cmTryCompileExec720513810 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3716376398/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3716376398.dir/build.make CMakeFiles/cmTryCompileExec3716376398.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3716376398.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec3716376398.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3716376398
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3716376398.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec3716376398.dir/src.c.o  -o cmTryCompileExec3716376398 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4026607877/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4026607877.dir/build.make CMakeFiles/cmTryCompileExec4026607877.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4026607877.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec4026607877.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec4026607877
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4026607877.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec4026607877.dir/src.c.o  -o cmTryCompileExec4026607877 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec313167014/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec313167014.dir/build.make CMakeFiles/cmTryCompileExec313167014.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec313167014.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec313167014.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec313167014
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec313167014.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec313167014.dir/src.c.o  -o cmTryCompileExec313167014 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2573846832/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2573846832.dir/build.make CMakeFiles/cmTryCompileExec2573846832.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2573846832.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2573846832.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2573846832
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2573846832.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec2573846832.dir/src.c.o  -o cmTryCompileExec2573846832 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec315248530/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec315248530.dir/build.make CMakeFiles/cmTryCompileExec315248530.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec315248530.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec315248530.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec315248530
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec315248530.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec315248530.dir/src.c.o  -o cmTryCompileExec315248530 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3949749324/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3949749324.dir/build.make CMakeFiles/cmTryCompileExec3949749324.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3949749324.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec3949749324.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3949749324
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3949749324.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec3949749324.dir/src.c.o  -o cmTryCompileExec3949749324 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2246111501/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2246111501.dir/build.make CMakeFiles/cmTryCompileExec2246111501.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2246111501.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2246111501.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2246111501
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2246111501.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec2246111501.dir/src.c.o  -o cmTryCompileExec2246111501 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec488883431/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec488883431.dir/build.make CMakeFiles/cmTryCompileExec488883431.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec488883431.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec488883431.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec488883431
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec488883431.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec488883431.dir/src.c.o  -o cmTryCompileExec488883431 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2433767896/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2433767896.dir/build.make CMakeFiles/cmTryCompileExec2433767896.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2433767896.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2433767896.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2433767896
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2433767896.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec2433767896.dir/src.c.o  -o cmTryCompileExec2433767896 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec97514279/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec97514279.dir/build.make CMakeFiles/cmTryCompileExec97514279.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec97514279.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec97514279.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec97514279
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec97514279.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec97514279.dir/src.c.o  -o cmTryCompileExec97514279 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2263989381/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2263989381.dir/build.make CMakeFiles/cmTryCompileExec2263989381.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2263989381.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2263989381.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2263989381
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2263989381.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec2263989381.dir/src.c.o  -o cmTryCompileExec2263989381 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1437189295/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1437189295.dir/build.make CMakeFiles/cmTryCompileExec1437189295.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1437189295.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1437189295.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1437189295
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1437189295.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec1437189295.dir/src.c.o  -o cmTryCompileExec1437189295 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4181850349/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4181850349.dir/build.make CMakeFiles/cmTryCompileExec4181850349.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4181850349.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec4181850349.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec4181850349
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4181850349.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec4181850349.dir/src.c.o  -o cmTryCompileExec4181850349 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3010858188/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3010858188.dir/build.make CMakeFiles/cmTryCompileExec3010858188.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3010858188.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec3010858188.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3010858188
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3010858188.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec3010858188.dir/src.c.o  -o cmTryCompileExec3010858188 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3150212235/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3150212235.dir/build.make CMakeFiles/cmTryCompileExec3150212235.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3150212235.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec3150212235.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3150212235
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3150212235.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec3150212235.dir/src.c.o  -o cmTryCompileExec3150212235 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1056002402/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1056002402.dir/build.make CMakeFiles/cmTryCompileExec1056002402.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1056002402.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1056002402.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1056002402
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1056002402.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec1056002402.dir/src.c.o  -o cmTryCompileExec1056002402 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1561099599/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1561099599.dir/build.make CMakeFiles/cmTryCompileExec1561099599.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1561099599.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1561099599.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1561099599
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1561099599.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec1561099599.dir/src.c.o  -o cmTryCompileExec1561099599 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1413010903/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1413010903.dir/build.make CMakeFiles/cmTryCompileExec1413010903.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1413010903.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec1413010903.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1413010903
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1413010903.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec1413010903.dir/src.c.o  -o cmTryCompileExec1413010903 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec530374503/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec530374503.dir/build.make CMakeFiles/cmTryCompileExec530374503.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec530374503.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec530374503.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec530374503
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec530374503.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec530374503.dir/src.c.o  -o cmTryCompileExec530374503 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2317216804/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2317216804.dir/build.make CMakeFiles/cmTryCompileExec2317216804.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2317216804.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec2317216804.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2317216804
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2317216804.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec2317216804.dir/src.c.o  -o cmTryCompileExec2317216804 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
+Performing C SOURCE FILE Test CompilePCFromUContext succeded with the following output:
+Change Dir: /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec100833068/fast"
+make[1]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec100833068.dir/build.make CMakeFiles/cmTryCompileExec100833068.dir/build
+make[2]: Entering directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec100833068.dir/src.c.o
+/usr/bin/cc   -DCompilePCFromUContext   -o CMakeFiles/cmTryCompileExec100833068.dir/src.c.o   -c /home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec100833068
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec100833068.dir/link.txt --verbose=1
+/usr/bin/cc   -DCompilePCFromUContext    CMakeFiles/cmTryCompileExec100833068.dir/src.c.o  -o cmTryCompileExec100833068 -rdynamic 
+make[2]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory `/home/liyg/Maiter+_/bin/release/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #define _GNU_SOURCE 1
+  
+#include <ucontext.h>
+#include <sys/ucontext.h>
+  int main(int argc, char** argv) {
+    ucontext_t ctx;
+    return ctx.uc_mcontext.gregs[REG_RIP] == 0;
+  }
